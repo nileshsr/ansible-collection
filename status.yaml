@@ -5,8 +5,7 @@
   vars:
     ocid: "ocid1.instance.oc1.iad.anuwcljtj6x6wyqcgop7zcqseywyso4xkksl3o5jerlmatnesheemaam6rbq"
   tasks:
-  - name: Perform action status of instance
-    oci_compute_instance:
+  - oci_compute_instance:
       instance_id: "{{ ocid }}"
     register: st
   - debug:
