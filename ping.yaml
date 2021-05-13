@@ -8,5 +8,5 @@
       debug:
         var: my_json_contents
     - name: Ping each IP
-      shell: "ping -c 1 -W 1 {{ item.IP }} > /tmp/1.txt"
+      shell: "ping -c 1 -W 1 {{ item.IP }} > 1.txt"
       with_items: "{{ my_json_contents }}"
