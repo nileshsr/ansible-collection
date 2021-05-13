@@ -1,5 +1,4 @@
-- name: Status a Compute
-  hosts: localhost
+- hosts: localhost
   connection: local
   collections:
     - oracle.oci
