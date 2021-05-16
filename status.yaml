@@ -1,6 +1,5 @@
 - hosts: localhost
-  vars:
-     ansible_connection: local
+  ansible_connection: local
   collections:
     - oracle.oci
   vars:
