@@ -8,3 +8,6 @@
   tasks:
   - oci_compute_instance:
       instance_id: "{{ ocid }}"
+    register: st
+  - debug:
+      var=st.instance.lifecycle_state
